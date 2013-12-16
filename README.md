@@ -7,3 +7,5 @@ Search and Replace text using regex in python
   + http://www.regular-expressions.info/quickstart.html
   + http://www.regular-expressions.info/tutorial.html
   + http://docs.python.org/2/library/re.html
+  + http://docs.python.org/2/library/functions.html#open
+

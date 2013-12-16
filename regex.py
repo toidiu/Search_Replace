@@ -1,25 +1,26 @@
 import re
 
-file = open('text.txt','r+')
+#open file and read content
+file = open('text.txt','r')
 content = file.read()
 #print content
 
-lines = content.split('\n')
+#seperate content into lines
+#lines = content.split('\n')
 #print lines[0]
 
-'''
-new = re.sub(r'name = "[a-z]+\s?[a-z]+?";',
-           r'name = "new name";',
+#find and replace content
+new_content = re.sub(r'name = "[\w][\w\s]*";',
+           r'name = "test name";',
            content)
-print new
-'''
+print new_content
 
-new = re.sub(r'name = "[\w][\w\s]*";',
-           r'name = "new name";',
-           content)
-print new
+#open file in write mode to replace content
+file = open('text.txt','w')
+file.write(new_content)
+file.close()
 
-'''
+''' text.txt
 name = 'fa';
 name = "fa";
 name = "fa"
