@@ -10,14 +10,15 @@ file = open(in_file,'r')
 content = file.read()
 #print content
 
-#seperate content into lines
-#lines = content.split('\n')
-#print lines[0]
-
 #find and replace content
-new_content = re.sub(r'name = "[\w][\w\s]*";',
+new_content = re.sub(
+           ###search term
+           r'name = "[\w][\w\s]*";',
+           ###replacement term
            r'name = "bllaaa name";',
-           content)
+           ###content read from file
+           content
+)
 #print new_content
 
 #open file in write mode to replace content
