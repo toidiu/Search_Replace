@@ -3,6 +3,12 @@ Search_Replace
 
 Search and Replace text using regex in python
 
+  * make sure you are running a 2.7x version of python.
+  * to run the program:
+  
+  declare the 'in' and 'out' file names in the regex.py file
+  run: python regex.py
+
 ##Sources:
   + http://www.regular-expressions.info/quickstart.html
   + http://www.regular-expressions.info/tutorial.html
